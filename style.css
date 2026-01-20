@@ -843,15 +843,6 @@ ul {
     cursor: pointer;
 }
 
-.ecosystem-card * {
-    pointer-events: none;
-}
-
-.ecosystem-overlay,
-.ecosystem-image {
-    pointer-events: none;
-}
-
 /* Social Section */
 .social-section {
     background: linear-gradient(180deg, transparent 0%, rgba(26, 26, 46, 0.3) 50%, transparent 100%);
@@ -1147,4 +1138,24 @@ ul {
 .ecosystem-card {
     pointer-events: auto;
     z-index: 5;
+}
+
+/* ===== FIX FINAL CLICK LINK ECOSYSTEM ===== */
+
+.ecosystem-card {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* overlay & image hanya visual */
+.ecosystem-overlay,
+.ecosystem-image {
+    pointer-events: none;
+}
+
+/* biarkan <a> yang menangkap klik */
+.ecosystem-card {
+    pointer-events: auto;
 }
