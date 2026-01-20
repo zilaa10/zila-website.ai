@@ -1111,3 +1111,14 @@ ul {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* FIX: allow clicks through animated background */
+.animated-background,
+#particleCanvas {
+    pointer-events: none;
+}
+
+.ecosystem-card {
+    pointer-events: auto;
+    z-index: 5;
+}
