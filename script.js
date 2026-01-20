@@ -227,11 +227,8 @@ window.addEventListener('scroll', () => {
 
 // Ecosystem card hover effect - prevent default link behavior for demo
 document.querySelectorAll('.ecosystem-card').forEach(card => {
-    card.addEventListener('click', (e) => {
-        e.preventDefault();
-        const title = card.getAttribute('data-title');
-        console.log(`Clicked on: ${title}`);
-        // In production, this would navigate to the actual blog/article page
+    card.addEventListener('click', () => {
+        // link <a> berjalan normal
     });
 });
 
