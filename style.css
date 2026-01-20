@@ -837,6 +837,21 @@ ul {
     margin-top: 10px;
 }
 
+.ecosystem-card {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.ecosystem-card * {
+    pointer-events: none;
+}
+
+.ecosystem-overlay,
+.ecosystem-image {
+    pointer-events: none;
+}
+
 /* Social Section */
 .social-section {
     background: linear-gradient(180deg, transparent 0%, rgba(26, 26, 46, 0.3) 50%, transparent 100%);
